@@ -4,6 +4,7 @@ var cheerio = require("cheerio");
 
 var GITHUB_TRENDING_URL = 'https://github.com/trending';
 var GITHUB_TRENDING_DEVELOPER = "https://github.com/trending/developers/javascript?since=daily";
+var result;
 
 async function scrape() {
     const browser = await puppeteer.launch({ headless: false });
